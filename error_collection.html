@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>错题本 - 学习提升</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- 顶部导航 -->
+    <div class="bg-white px-4 py-3 flex items-center border-b border-gray-200">
+        <a href="home.html" class="text-gray-500 mr-4">
+            <i class="fas fa-arrow-left"></i>
+        </a>
+        <h1 class="text-lg font-bold">错题本</h1>
+    </div>
+    
+    <!-- 切换模式 -->
+    <div class="bg-white p-4 flex">
+        <button class="flex-1 py-2 text-center bg-blue-600 text-white rounded-l-full">个人错题本</button>
+        <button class="flex-1 py-2 text-center bg-gray-200 rounded-r-full">同年级题集</button>
+    </div>
+    
+    <!-- 学科选择 -->
+    <div class="bg-white px-4 pt-3 pb-2 mt-2 overflow-x-auto">
+        <div class="flex space-x-3">
+            <button class="px-4 py-1 bg-blue-600 text-white rounded-full text-sm">全部</button>
+            <button class="px-4 py-1 bg-gray-100 rounded-full text-sm">数学</button>
+            <button class="px-4 py-1 bg-gray-100 rounded-full text-sm">语文</button>
+            <button class="px-4 py-1 bg-gray-100 rounded-full text-sm">英语</button>
+            <button class="px-4 py-1 bg-gray-100 rounded-full text-sm">物理</button>
+            <button class="px-4 py-1 bg-gray-100 rounded-full text-sm">化学</button>
+        </div>
+    </div>
+    
+    <!-- 统计卡片 -->
+    <div class="bg-white p-4 mt-2">
+        <div class="flex justify-between items-center mb-3">
+            <h2 class="font-bold">错题统计</h2>
+            <span class="text-sm text-gray-500">本月</span>
+        </div>
+        
+        <div class="flex space-x-4">
+            <div class="flex-1 bg-blue-50 p-3 rounded-lg">
+                <div class="text-xl font-bold text-blue-600">58</div>
+                <div class="text-xs text-gray-500">总错题数</div>
+            </div>
+            <div class="flex-1 bg-green-50 p-3 rounded-lg">
+                <div class="text-xl font-bold text-green-600">32</div>
+                <div class="text-xs text-gray-500">已复习</div>
+            </div>
+            <div class="flex-1 bg-red-50 p-3 rounded-lg">
+                <div class="text-xl font-bold text-red-600">26</div>
+                <div class="text-xs text-gray-500">待复习</div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 错题列表 -->
+    <div class="mt-2">
+        <div class="bg-white p-4 border-b border-gray-100">
+            <div class="flex justify-between mb-2">
+                <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">数学</span>
+                <span class="text-xs text-gray-500">2023-10-15</span>
+            </div>
+            <div class="text-gray-800 mb-2">
+                已知函数f(x)=log₂(x²+1)，求f(x)的定义域和值域。
+            </div>
+            <div class="flex justify-between items-center">
+                <span class="text-xs text-gray-500">知识点：对数函数</span>
+                <div class="flex space-x-2">
+                    <button class="bg-blue-600 text-white px-3 py-1 rounded-full text-xs">查看解析</button>
+                    <button class="bg-gray-200 px-3 py-1 rounded-full text-xs">删除</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="bg-white p-4 border-b border-gray-100">
+            <div class="flex justify-between mb-2">
+                <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">物理</span>
+                <span class="text-xs text-gray-500">2023-10-14</span>
+            </div>
+            <div class="text-gray-800 mb-2">
+                一个质量为m的物体从高度h处沿光滑斜面下滑，求物体到达斜面底部时的速度。
+            </div>
+            <div class="flex justify-between items-center">
+                <span class="text-xs text-gray-500">知识点：动能定理</span>
+                <div class="flex space-x-2">
+                    <button class="bg-blue-600 text-white px-3 py-1 rounded-full text-xs">查看解析</button>
+                    <button class="bg-gray-200 px-3 py-1 rounded-full text-xs">删除</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="bg-white p-4 border-b border-gray-100">
+            <div class="flex justify-between mb-2">
+                <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs">英语</span>
+                <span class="text-xs text-gray-500">2023-10-13</span>
+            </div>
+            <div class="text-gray-800 mb-2">
+                She _____ (wait) for the bus for more than an hour when it finally arrived.
+            </div>
+            <div class="flex justify-between items-center">
+                <span class="text-xs text-gray-500">知识点：过去完成进行时</span>
+                <div class="flex space-x-2">
+                    <button class="bg-blue-600 text-white px-3 py-1 rounded-full text-xs">查看解析</button>
+                    <button class="bg-gray-200 px-3 py-1 rounded-full text-xs">删除</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="bg-white p-4 border-b border-gray-100">
+            <div class="flex justify-between mb-2">
+                <span class="bg-red-100 text-red-800 px-2 py-1 rounded text-xs">化学</span>
+                <span class="text-xs text-gray-500">2023-10-12</span>
+            </div>
+            <div class="text-gray-800 mb-2">
+                写出下列反应的离子方程式：NaOH + HCl → NaCl + H₂O
+            </div>
+            <div class="flex justify-between items-center">
+                <span class="text-xs text-gray-500">知识点：离子方程式</span>
+                <div class="flex space-x-2">
+                    <button class="bg-blue-600 text-white px-3 py-1 rounded-full text-xs">查看解析</button>
+                    <button class="bg-gray-200 px-3 py-1 rounded-full text-xs">删除</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 底部导航栏 -->
+    <div class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 flex justify-around py-3">
+        <a href="home.html" class="text-gray-500 flex flex-col items-center">
+            <i class="fas fa-home"></i>
+            <span class="text-xs mt-1">首页</span>
+        </a>
+        <a href="topic_training.html" class="text-gray-500 flex flex-col items-center">
+            <i class="fas fa-book-open"></i>
+            <span class="text-xs mt-1">学习</span>
+        </a>
+        <a href="error_collection.html" class="text-blue-600 flex flex-col items-center">
+            <i class="fas fa-pencil-alt"></i>
+            <span class="text-xs mt-1">错题</span>
+        </a>
+        <a href="learning_report.html" class="text-gray-500 flex flex-col items-center">
+            <i class="fas fa-user"></i>
+            <span class="text-xs mt-1">我的</span>
+        </a>
+    </div>
+    
+    <!-- 悬浮按钮 -->
+    <button class="fixed right-6 bottom-20 bg-blue-600 w-14 h-14 rounded-full flex items-center justify-center text-white shadow-lg">
+        <i class="fas fa-plus"></i>
+    </button>
+</body>
+</html> 

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>举一反三 - 学习提升</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- 顶部导航 -->
+    <div class="bg-white px-4 py-3 flex items-center border-b border-gray-200">
+        <a href="home.html" class="text-gray-500 mr-4">
+            <i class="fas fa-arrow-left"></i>
+        </a>
+        <h1 class="text-lg font-bold">举一反三</h1>
+    </div>
+    
+    <!-- 介绍卡片 -->
+    <div class="bg-white p-4 mt-2">
+        <div class="bg-purple-50 p-4 rounded-lg border border-purple-200">
+            <h3 class="font-bold text-purple-800 mb-2">什么是举一反三？</h3>
+            <p class="text-sm text-gray-700 mb-2">
+                基于您的错题，智能生成相似题型，通过变式训练加深理解，帮助您掌握知识点本质。
+            </p>
+            <div class="flex items-center text-xs text-purple-800">
+                <i class="fas fa-lightbulb mr-1"></i>
+                <span>基于AI技术，题目将随着您的解题表现自动调整难度</span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 学科选择 -->
+    <div class="bg-white px-4 pt-3 pb-2 mt-2 overflow-x-auto">
+        <div class="flex space-x-3">
+            <button class="px-4 py-1 bg-purple-600 text-white rounded-full text-sm">全部</button>
+            <button class="px-4 py-1 bg-gray-100 rounded-full text-sm">数学</button>
+            <button class="px-4 py-1 bg-gray-100 rounded-full text-sm">语文</button>
+            <button class="px-4 py-1 bg-gray-100 rounded-full text-sm">英语</button>
+            <button class="px-4 py-1 bg-gray-100 rounded-full text-sm">物理</button>
+            <button class="px-4 py-1 bg-gray-100 rounded-full text-sm">化学</button>
+        </div>
+    </div>
+    
+    <!-- 错题题组列表 -->
+    <div class="p-4">
+        <h2 class="font-bold mb-3">推荐练习</h2>
+        
+        <div class="bg-white p-4 rounded-lg shadow-sm mb-4 border-l-4 border-purple-600">
+            <div class="flex justify-between items-center mb-2">
+                <div class="font-bold">数学 - 函数与导数</div>
+                <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs">3变式题</span>
+            </div>
+            <div class="text-sm text-gray-700 mb-3">
+                原题：已知函数f(x)=log₂(x²+1)，求f(x)的定义域和值域。
+            </div>
+            <div class="flex justify-between items-center">
+                <span class="text-xs text-gray-500">难度：★★★☆☆</span>
+                <button class="bg-purple-600 text-white px-4 py-1 rounded-full text-sm">开始练习</button>
+            </div>
+        </div>
+        
+        <div class="bg-white p-4 rounded-lg shadow-sm mb-4 border-l-4 border-green-600">
+            <div class="flex justify-between items-center mb-2">
+                <div class="font-bold">物理 - 动能定理</div>
+                <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">5变式题</span>
+            </div>
+            <div class="text-sm text-gray-700 mb-3">
+                原题：一个质量为m的物体从高度h处沿光滑斜面下滑，求物体到达斜面底部时的速度。
+            </div>
+            <div class="flex justify-between items-center">
+                <span class="text-xs text-gray-500">难度：★★★★☆</span>
+                <button class="bg-green-600 text-white px-4 py-1 rounded-full text-sm">开始练习</button>
+            </div>
+        </div>
+        
+        <div class="bg-white p-4 rounded-lg shadow-sm mb-4 border-l-4 border-blue-600">
+            <div class="flex justify-between items-center mb-2">
+                <div class="font-bold">英语 - 时态</div>
+                <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">4变式题</span>
+            </div>
+            <div class="text-sm text-gray-700 mb-3">
+                原题：She _____ (wait) for the bus for more than an hour when it finally arrived.
+            </div>
+            <div class="flex justify-between items-center">
+                <span class="text-xs text-gray-500">难度：★★☆☆☆</span>
+                <button class="bg-blue-600 text-white px-4 py-1 rounded-full text-sm">开始练习</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 热门知识点 -->
+    <div class="p-4 mt-2">
+        <h2 class="font-bold mb-3">热门知识点</h2>
+        
+        <div class="grid grid-cols-2 gap-3">
+            <div class="bg-white p-3 rounded-lg shadow-sm flex flex-col">
+                <span class="bg-red-100 text-red-800 px-2 py-1 rounded text-xs self-start mb-2">数学</span>
+                <div class="font-bold mb-1">三角函数</div>
+                <div class="text-xs text-gray-500 mb-2">练习人数：1,253</div>
+                <button class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-xs self-end mt-auto">进入</button>
+            </div>
+            
+            <div class="bg-white p-3 rounded-lg shadow-sm flex flex-col">
+                <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs self-start mb-2">物理</span>
+                <div class="font-bold mb-1">牛顿运动定律</div>
+                <div class="text-xs text-gray-500 mb-2">练习人数：986</div>
+                <button class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-xs self-end mt-auto">进入</button>
+            </div>
+            
+            <div class="bg-white p-3 rounded-lg shadow-sm flex flex-col">
+                <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs self-start mb-2">化学</span>
+                <div class="font-bold mb-1">氧化还原反应</div>
+                <div class="text-xs text-gray-500 mb-2">练习人数：752</div>
+                <button class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-xs self-end mt-auto">进入</button>
+            </div>
+            
+            <div class="bg-white p-3 rounded-lg shadow-sm flex flex-col">
+                <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs self-start mb-2">英语</span>
+                <div class="font-bold mb-1">非谓语动词</div>
+                <div class="text-xs text-gray-500 mb-2">练习人数：689</div>
+                <button class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-xs self-end mt-auto">进入</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 底部导航栏 -->
+    <div class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 flex justify-around py-3">
+        <a href="home.html" class="text-gray-500 flex flex-col items-center">
+            <i class="fas fa-home"></i>
+            <span class="text-xs mt-1">首页</span>
+        </a>
+        <a href="topic_training.html" class="text-gray-500 flex flex-col items-center">
+            <i class="fas fa-book-open"></i>
+            <span class="text-xs mt-1">学习</span>
+        </a>
+        <a href="error_collection.html" class="text-gray-500 flex flex-col items-center">
+            <i class="fas fa-pencil-alt"></i>
+            <span class="text-xs mt-1">错题</span>
+        </a>
+        <a href="learning_report.html" class="text-gray-500 flex flex-col items-center">
+            <i class="fas fa-user"></i>
+            <span class="text-xs mt-1">我的</span>
+        </a>
+    </div>
+</body>
+</html> 

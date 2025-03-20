@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>错题重练 - 学习提升</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- 顶部导航 -->
+    <div class="bg-white px-4 py-3 flex items-center border-b border-gray-200">
+        <a href="home.html" class="text-gray-500 mr-4">
+            <i class="fas fa-arrow-left"></i>
+        </a>
+        <h1 class="text-lg font-bold">错题重练</h1>
+    </div>
+    
+    <!-- 重练模式 -->
+    <div class="bg-white p-4 mt-2">
+        <h2 class="font-bold mb-4">选择复习方式</h2>
+        
+        <div class="flex flex-col space-y-3">
+            <button class="flex items-center p-4 border border-blue-200 rounded-lg bg-blue-50">
+                <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white mr-4">
+                    <i class="fas fa-mobile-alt text-xl"></i>
+                </div>
+                <div class="flex-1">
+                    <div class="font-bold">在线答题</div>
+                    <div class="text-sm text-gray-500">直接在APP中完成错题练习</div>
+                </div>
+                <i class="fas fa-chevron-right text-gray-400"></i>
+            </button>
+            
+            <button class="flex items-center p-4 border border-gray-200 rounded-lg">
+                <div class="w-12 h-12 bg-indigo-600 rounded-full flex items-center justify-center text-white mr-4">
+                    <i class="fas fa-print text-xl"></i>
+                </div>
+                <div class="flex-1">
+                    <div class="font-bold">打印练习</div>
+                    <div class="text-sm text-gray-500">通过蓝牙连接打印机，打印错题</div>
+                </div>
+                <i class="fas fa-chevron-right text-gray-400"></i>
+            </button>
+        </div>
+    </div>
+    
+    <!-- 练习计划 -->
+    <div class="bg-white p-4 mt-4">
+        <div class="flex justify-between items-center mb-4">
+            <h2 class="font-bold">今日练习计划</h2>
+            <span class="text-blue-600 text-sm">更多</span>
+        </div>
+        
+        <div class="border border-blue-200 rounded-lg p-4 bg-blue-50 mb-4">
+            <div class="flex justify-between items-center mb-3">
+                <span class="text-blue-800 font-bold">数学错题集</span>
+                <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-xs">10题</span>
+            </div>
+            <div class="text-sm text-gray-600 mb-3">
+                以函数与导数为主，包含3道难度题
+            </div>
+            <div class="flex justify-between">
+                <span class="text-xs text-gray-500">上次练习: 3天前</span>
+                <button class="bg-blue-600 text-white px-4 py-1 rounded-full text-sm">开始练习</button>
+            </div>
+        </div>
+        
+        <div class="border border-gray-200 rounded-lg p-4 mb-4">
+            <div class="flex justify-between items-center mb-3">
+                <span class="text-gray-800 font-bold">物理错题集</span>
+                <span class="bg-gray-600 text-white px-3 py-1 rounded-full text-xs">8题</span>
+            </div>
+            <div class="text-sm text-gray-600 mb-3">
+                力学与电学知识点，建议重点复习
+            </div>
+            <div class="flex justify-between">
+                <span class="text-xs text-gray-500">上次练习: 5天前</span>
+                <button class="bg-gray-200 text-gray-800 px-4 py-1 rounded-full text-sm">开始练习</button>
+            </div>
+        </div>
+        
+        <div class="border border-gray-200 rounded-lg p-4">
+            <div class="flex justify-between items-center mb-3">
+                <span class="text-gray-800 font-bold">英语错题集</span>
+                <span class="bg-gray-600 text-white px-3 py-1 rounded-full text-xs">12题</span>
+            </div>
+            <div class="text-sm text-gray-600 mb-3">
+                时态和从句练习，重点语法知识点
+            </div>
+            <div class="flex justify-between">
+                <span class="text-xs text-gray-500">上次练习: 7天前</span>
+                <button class="bg-gray-200 text-gray-800 px-4 py-1 rounded-full text-sm">开始练习</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 底部导航栏 -->
+    <div class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 flex justify-around py-3">
+        <a href="home.html" class="text-gray-500 flex flex-col items-center">
+            <i class="fas fa-home"></i>
+            <span class="text-xs mt-1">首页</span>
+        </a>
+        <a href="topic_training.html" class="text-gray-500 flex flex-col items-center">
+            <i class="fas fa-book-open"></i>
+            <span class="text-xs mt-1">学习</span>
+        </a>
+        <a href="error_collection.html" class="text-blue-600 flex flex-col items-center">
+            <i class="fas fa-pencil-alt"></i>
+            <span class="text-xs mt-1">错题</span>
+        </a>
+        <a href="learning_report.html" class="text-gray-500 flex flex-col items-center">
+            <i class="fas fa-user"></i>
+            <span class="text-xs mt-1">我的</span>
+        </a>
+    </div>
+</body>
+</html> 
