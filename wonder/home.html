@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页 - 学习提升</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- 顶部状态栏 -->
+    <div class="bg-blue-600 text-white px-4 py-2 flex justify-between items-center">
+        <div class="text-lg font-bold">学习提升</div>
+        <div class="flex space-x-3">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-bell"></i>
+        </div>
+    </div>
+    
+    <!-- 用户信息卡片 -->
+    <div class="bg-white rounded-lg shadow-md m-4 p-4">
+        <div class="flex items-center">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" alt="用户头像" class="w-16 h-16 rounded-full">
+            <div class="ml-4">
+                <div class="font-bold text-lg">李明同学</div>
+                <div class="text-sm text-gray-500">高一年级</div>
+                <div class="mt-1 flex items-center">
+                    <span class="text-sm bg-blue-100 text-blue-800 px-2 py-1 rounded">连续学习 15 天</span>
+                    <span class="ml-2 text-sm text-gray-500">学习币: 280</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 今日学习计划 -->
+    <div class="mx-4 my-5">
+        <div class="flex justify-between items-center mb-3">
+            <h2 class="text-lg font-bold">今日学习计划</h2>
+            <span class="text-blue-600 text-sm">查看全部</span>
+        </div>
+        
+        <div class="bg-white rounded-lg shadow-sm p-4 mb-4">
+            <div class="flex items-center justify-between">
+                <div>
+                    <div class="font-bold">数学错题复习</div>
+                    <div class="text-sm text-gray-500">函数与导数 - 10道题</div>
+                </div>
+                <button class="bg-blue-600 text-white px-4 py-2 rounded-full text-sm">开始</button>
+            </div>
+            <div class="mt-2 bg-gray-100 rounded-full h-2">
+                <div class="bg-blue-600 h-2 rounded-full" style="width: 30%"></div>
+            </div>
+            <div class="text-xs text-gray-500 mt-1">已完成 3/10 题</div>
+        </div>
+        
+        <div class="bg-white rounded-lg shadow-sm p-4">
+            <div class="flex items-center justify-between">
+                <div>
+                    <div class="font-bold">物理专项训练</div>
+                    <div class="text-sm text-gray-500">力学基础 - 5道题</div>
+                </div>
+                <button class="bg-blue-600 text-white px-4 py-2 rounded-full text-sm">开始</button>
+            </div>
+            <div class="mt-2 bg-gray-100 rounded-full h-2">
+                <div class="bg-blue-600 h-2 rounded-full" style="width: 0%"></div>
+            </div>
+            <div class="text-xs text-gray-500 mt-1">待完成 0/5 题</div>
+        </div>
+    </div>
+    
+    <!-- 功能区 -->
+    <div class="grid grid-cols-3 gap-4 mx-4 my-5">
+        <a href="error_collection.html" class="bg-white rounded-lg shadow-sm p-3 flex flex-col items-center">
+            <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mb-2">
+                <i class="fas fa-book text-red-600"></i>
+            </div>
+            <span class="text-sm">错题本</span>
+        </a>
+        
+        <a href="error_practice.html" class="bg-white rounded-lg shadow-sm p-3 flex flex-col items-center">
+            <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mb-2">
+                <i class="fas fa-sync text-orange-600"></i>
+            </div>
+            <span class="text-sm">错题重练</span>
+        </a>
+        
+        <a href="similar_practice.html" class="bg-white rounded-lg shadow-sm p-3 flex flex-col items-center">
+            <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mb-2">
+                <i class="fas fa-random text-purple-600"></i>
+            </div>
+            <span class="text-sm">举一反三</span>
+        </a>
+        
+        <a href="topic_training.html" class="bg-white rounded-lg shadow-sm p-3 flex flex-col items-center">
+            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-2">
+                <i class="fas fa-tasks text-green-600"></i>
+            </div>
+            <span class="text-sm">专项训练</span>
+        </a>
+        
+        <a href="exam_sprint.html" class="bg-white rounded-lg shadow-sm p-3 flex flex-col items-center">
+            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-2">
+                <i class="fas fa-rocket text-blue-600"></i>
+            </div>
+            <span class="text-sm">考前冲刺</span>
+        </a>
+        
+        <a href="learning_report.html" class="bg-white rounded-lg shadow-sm p-3 flex flex-col items-center">
+            <div class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mb-2">
+                <i class="fas fa-chart-line text-indigo-600"></i>
+            </div>
+            <span class="text-sm">学习报告</span>
+        </a>
+    </div>
+    
+    <!-- 学习进度 -->
+    <div class="mx-4 my-5">
+        <div class="flex justify-between items-center mb-3">
+            <h2 class="text-lg font-bold">本周学习统计</h2>
+            <span class="text-blue-600 text-sm">查看详情</span>
+        </div>
+        
+        <div class="bg-white rounded-lg shadow-sm p-4">
+            <div class="flex justify-between mb-4">
+                <div class="text-center">
+                    <div class="text-xl font-bold text-blue-600">65</div>
+                    <div class="text-xs text-gray-500">已学习题目</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-xl font-bold text-green-600">12</div>
+                    <div class="text-xs text-gray-500">加强知识点</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-xl font-bold text-red-600">8</div>
+                    <div class="text-xs text-gray-500">薄弱知识点</div>
+                </div>
+            </div>
+            
+            <div class="flex justify-between items-center space-x-1">
+                <div class="bg-blue-600 h-4 rounded-full" style="width: 25%"></div>
+                <div class="bg-green-600 h-4 rounded-full" style="width: 40%"></div>
+                <div class="bg-yellow-600 h-4 rounded-full" style="width: 20%"></div>
+                <div class="bg-red-600 h-4 rounded-full" style="width: 15%"></div>
+            </div>
+            
+            <div class="mt-2 text-sm text-gray-500">
+                较上周提升了 15%，继续加油！
+            </div>
+        </div>
+    </div>
+    
+    <!-- 底部导航栏 -->
+    <div class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 flex justify-around py-3">
+        <a href="home.html" class="text-blue-600 flex flex-col items-center">
+            <i class="fas fa-home"></i>
+            <span class="text-xs mt-1">首页</span>
+        </a>
+        <a href="topic_training.html" class="text-gray-500 flex flex-col items-center">
+            <i class="fas fa-book-open"></i>
+            <span class="text-xs mt-1">学习</span>
+        </a>
+        <a href="error_collection.html" class="text-gray-500 flex flex-col items-center">
+            <i class="fas fa-pencil-alt"></i>
+            <span class="text-xs mt-1">错题</span>
+        </a>
+        <a href="learning_report.html" class="text-gray-500 flex flex-col items-center">
+            <i class="fas fa-user"></i>
+            <span class="text-xs mt-1">我的</span>
+        </a>
+    </div>
+</body>
+</html> 

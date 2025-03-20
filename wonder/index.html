@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学习提升 APP 原型</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f5f7fa;
+        }
+        .prototype-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+        .screen {
+            background: white;
+            border-radius: 30px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            height: 667px;
+            width: 375px;
+        }
+        .screen-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        iframe {
+            border: none;
+            height: 100%;
+            width: 100%;
+        }
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+            color: #1a202c;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="text-3xl font-bold">学习提升 APP 原型设计</h1>
+    
+    <div class="prototype-container">
+        <div>
+            <div class="screen-title">首页</div>
+            <div class="screen">
+                <iframe src="home.html"></iframe>
+            </div>
+        </div>
+        
+        <div>
+            <div class="screen-title">错题本</div>
+            <div class="screen">
+                <iframe src="error_collection.html"></iframe>
+            </div>
+        </div>
+        
+        <div>
+            <div class="screen-title">错题重练</div>
+            <div class="screen">
+                <iframe src="error_practice.html"></iframe>
+            </div>
+        </div>
+        
+        <div>
+            <div class="screen-title">举一反三</div>
+            <div class="screen">
+                <iframe src="similar_practice.html"></iframe>
+            </div>
+        </div>
+        
+        <div>
+            <div class="screen-title">专项训练</div>
+            <div class="screen">
+                <iframe src="topic_training.html"></iframe>
+            </div>
+        </div>
+        
+        <div>
+            <div class="screen-title">考前冲刺</div>
+            <div class="screen">
+                <iframe src="exam_sprint.html"></iframe>
+            </div>
+        </div>
+        
+        <div>
+            <div class="screen-title">学习报告</div>
+            <div class="screen">
+                <iframe src="learning_report.html"></iframe>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
